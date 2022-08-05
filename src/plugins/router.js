@@ -1,6 +1,7 @@
 import home from "../pages/home.vue";
 import login from "../pages/auth/login.vue";
 import register from "../pages/auth/register.vue";
+import productCreate from "../pages/product/Create.vue"
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -21,6 +22,12 @@ export const routes =[
         name: 'register',
         component: register
     },
+    {
+        path: '/product/create',
+        name: 'product.create',
+        component: productCreate
+    },
+
 ]
 
 const router = createRouter({
