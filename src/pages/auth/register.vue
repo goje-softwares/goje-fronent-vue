@@ -47,6 +47,8 @@ export default {
             if (response.status === 201) {
               store.setVal('auth.token', response.data.access_token)
               store.setVal('userLogged', true)
+              this.$swal('ثبت نام با موفقیت انجام شد.');
+
             }
           })
           .catch(e => {
