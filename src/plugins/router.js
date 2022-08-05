@@ -36,13 +36,6 @@ router.beforeEach((to, from,)=>{
             query: { redirect: to.fullPath },
         }
     }
-    if (to.meta.requiresAuth && localStorage.getItem('userLogged')) {
-
-        return {
-            path: '/',
-            query: {redirect: to.fullPath}
-        }
-    }
 })
 
 
