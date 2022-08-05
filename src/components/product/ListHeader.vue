@@ -3,6 +3,7 @@
     <td>id</td>
     <td>name</td>
     <td>price</td>
+    <td>delete</td>
   </tr>
 </template>
 
