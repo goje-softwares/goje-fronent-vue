@@ -17,7 +17,7 @@
 <script>
 import SubmitButton from "./../../components/form/submit-button.vue";
 import TextInput from "./../../components/form/text-input.vue";
-import {HTTP} from "../../plugins/http.js";
+import {APIs, HTTP} from "../../plugins/http.js";
 import store from "../../plugins/store.js";
 
 export default {
@@ -30,12 +30,14 @@ export default {
     }
   }, methods: {
     login() {
-      let data = {
+
+      let api = APIs.auth.login;
+      api.data = {
         'email': this.$data.email,
         'password': this.$data.password
-      };
+      }
 
-      HTTP.postForm(`api/auth/login`, data)
+      HTTP(api)
           .then(response => {
             if (response.status === 200) {
               store.setVal('auth.token', response.data.access_token)
