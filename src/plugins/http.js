@@ -49,7 +49,7 @@ export const APIs = {
             method: 'get',
             url: 'api/products/{id}'
         },
-        store: {
+        create: {
             method: 'post',
             url: 'api/products/store'
         },
