@@ -15,8 +15,4 @@ export default {
 
 <style scoped>
 
-td{
-  padding: 5px 15px;
-  border: 1px solid #ffffff;
-}
 </style>
