@@ -9,18 +9,18 @@ export default {
 </script>
 
 <template>
-  <label>{{ inputLabel }}</label>
-  <input
-      :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
-  />
+  <div class="form-group">
+    <label class="col-form-label">{{ inputLabel }}</label>
+    <input
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
+        class="form-control"
+    />
+  </div>
+
 </template>
 
 
 <style scoped>
-label, input {
-  display: block;
-  color: #f9f9f9;
-  padding: 8px 15px;
-}
+
 </style>
