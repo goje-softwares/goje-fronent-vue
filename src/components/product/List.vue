@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table>
+    <table class="table table-bordered table-responsive-sm">
       <slot></slot>
     </table>
   </div>
@@ -14,8 +14,4 @@ export default {
 </script>
 
 <style scoped>
-table, tr{
-  border-collapse: collapse;
-  border: 1px solid #ffffff;
-}
 </style>
