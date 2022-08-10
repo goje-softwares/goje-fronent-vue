@@ -1,6 +1,8 @@
 <template>
 <div>
-  <button>submit</button>
+  <div>
+    <button class="btn btn-lg btn-secondary btn-block">ارسال</button>
+  </div>
 </div>
 </template>
 
