@@ -4,7 +4,7 @@
     <td>{{ product.name }}</td>
     <td>{{ product.price }}</td>
     <td>
-      <button class="btn-delete" @click="deleteProduct">delete</button>
+      <button class="btn btn-danger" @click="deleteProduct">delete</button>
     </td>
   </tr>
 </template>
@@ -36,15 +36,5 @@ export default {
 </script>
 
 <style scoped>
-td {
-  padding: 5px 15px;
-  border: 1px solid #ffffff;
-}
-
-.btn-delete {
-  border: 1px solid #f61111;
-  color: #ffffff;
-  background: #f61111;
-}
 
 </style>
